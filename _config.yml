@@ -7,7 +7,6 @@ title: Yunpeng's Notes
 subtitle: Do the same, think different
 description: Think \ Summary \ Record \ Share
 author: Bai's Notes
-email: byp_note@163.com
 language: zh-Hans
 timezone:
 
@@ -64,6 +63,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+# plugins:
+#  - hexo-generator-feed
+
+
 theme: yilia
 
 # Deployment
@@ -72,6 +75,11 @@ deploy:
   type: git
   repository: https://github.com/yunpengb/yunpengb.github.io.git
   branch: master
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
   
 #Yilia config all doc
 jsonContent:
